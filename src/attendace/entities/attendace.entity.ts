@@ -27,10 +27,9 @@ export class Attendace extends Document {
   phone?: string;
 
   @Prop({
-    required: true,
     index: true,
   })
-  address: string;
+  address?: string;
 }
 
 export const AttendaceSchema = SchemaFactory.createForClass(Attendace);

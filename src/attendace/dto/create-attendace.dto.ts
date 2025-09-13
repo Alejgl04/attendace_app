@@ -16,5 +16,6 @@ export class CreateAttendaceDto {
   phone?: number;
 
   @IsString()
-  address: string;
+  @IsOptional()
+  address?: string;
 }
